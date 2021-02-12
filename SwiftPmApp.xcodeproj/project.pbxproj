@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		CC3B8AF725D6ADD200CC69AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3B8AF525D6ADD200CC69AC /* Main.storyboard */; };
 		CC3B8AF925D6ADD400CC69AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3B8AF825D6ADD400CC69AC /* Assets.xcassets */; };
 		CC3B8AFC25D6ADD400CC69AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3B8AFA25D6ADD400CC69AC /* LaunchScreen.storyboard */; };
+		CC3B8B0625D6AE6100CC69AC /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CC3B8B0525D6AE6100CC69AC /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3B8B0625D6AE6100CC69AC /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SwiftPmApp;
+			packageProductDependencies = (
+				CC3B8B0525D6AE6100CC69AC /* PKHUD */,
+			);
 			productName = SwiftPmApp;
 			productReference = CC3B8AEC25D6ADD200CC69AC /* SwiftPmApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = CC3B8AE325D6ADD200CC69AC;
+			packageReferences = (
+				CC3B8B0425D6AE6100CC69AC /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = CC3B8AED25D6ADD200CC69AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC3B8B0425D6AE6100CC69AC /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC3B8B0525D6AE6100CC69AC /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC3B8B0425D6AE6100CC69AC /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC3B8AE425D6ADD200CC69AC /* Project object */;
 }
